@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <!--link for icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+
+    <body style="background-color: #FFFCF6;">
+        <header>
+            <nav
+                class="navbar navbar-expand-sm navbar-light"
+            >
+                <div class="container w-100" style="background-color: #FFFCF6;">
+                    <a class="navbar-brand" href="anasayfa.html"><img src="images/anadoludan.png" alt="" style="max-width: 180px; margin-right: 50px;"></a>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href=""><i class="fa-solid fa-basket-shopping fa-2xl position-relative"
+                        style="color: #000000; margin-right: 15px;"><span id="basketBadge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span> </i></a>
+                     
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const addToBadge = document.querySelectorAll('.btn-outline-success');
+                        const basketBadge = document.getElementById('basketBadge');
+                        let itemCount = 0;
+                
+                        addToBadge.forEach(function(button) {
+                            button.addEventListener('click', function() {
+                                // Increment the badge count
+                                itemCount++;
+                                basketBadge.textContent = itemCount;
+                            });
+                        });
+                    });
+                </script>       
+            </nav>
+            
+            
+
+            <!-- place navbar here -->
+            <nav
+                class="navbar navbar-expand-sm navbar-light" style="padding: 2%;  background-color: #FCDC2A;"
+            >
+                <div class="container">
+
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-1 mt-lg-0 ms-3 " >
+                            <li class="nav-item pe-2 fw-bold">
+                                <a class="nav-link active" href="anasayfa.html" aria-current="page"
+                                    >ANASAYFA
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item pe-2 fw-bold">
+                                <a class="nav-link active" href="gunluk.html" aria-current="page"
+                                    >GÜNLÜK ORGANİK
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item pe-2 fw-bold">
+                                <a class="nav-link active" href="bahce.html" aria-current="page"
+                                    >ORGANİK BAHÇE
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item pe-2 fw-bold">
+                                <a class="nav-link active" href="yoresel.html" aria-current="page"
+                                    >YÖRESEL ÜRÜNLER
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li> 
+                            <li class="nav-item fw-bold">
+                                <a class="nav-link active" href="hakkimizda.html" aria-current="page"
+                                    >HAKKIMIZDA VE İLETİŞİM
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                        </ul> 
+
+                    </div>
+                </div>   
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row pt-3"><h1 style="color: darkred;">YÖRESEL ÜRÜNLERİMİZ</h1></div>
+                <div class="row">
+                    <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/1.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">FISTIKLI SAMSA</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/2.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">SİİRT FISTIĞI</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/3.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">BİBER SALÇASI</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/4.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">DOMATES SALÇASI</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/5.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">MARAŞ TARHANASI</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/6.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">TARHANA</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/7.png" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">TULUM PEYNİRİ</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/8.jpeg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">OTLU PEYNİR</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/9.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">ANTEP FISTIĞI</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/10.png" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">FINDIK</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/11.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">YER FISTIĞI</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/12.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">SUMAK EKŞİSİ</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/13.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">KAYISI ÇİRİ</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/14.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">GEMLİK ZEYTİNİ</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/15.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">PORTAKAL REÇELİ</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/16.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">ÇİLEK REÇELİ</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/17.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">BİBERLİ EKMEK</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/18.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">KABAK TATLISI</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/19.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">CEVİZLİ SUCUK</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/20.jpeg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">KÖPÜK SUCUK</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/21.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">MARAŞ UN KURABİYESİ</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/22.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">CEVİZLİ KÖMBE</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/23.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">MARAŞ ÇÖREĞİ</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 p-2 g-col-3">
+                        <div class="card">
+                          <img src="images/yoresel/24.jpg" class="card-img-top" alt="..." style="max-width: 100%; object-fit: cover; height: 230px ;" >
+                            <div class="card-body">
+                              <p class="card-title fw-bold">GÜLLÜ LOKUM</p>                
+                              <p class="card-text mb-0 text-dark">50TL</p>
+                              <p class="card-text mb-0 text-muted fst-italic">Mersin</p>
+                              <button type="button" class="btn btn-outline-success btn-light fw-bold">SEPETE EKLE<i class="fa-solid fa-basket-shopping"></i></button>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+            <div class="container mt-3 text-center">
+
+                <div class="row" style="background-color:#FFFAE5; text-decoration: none; color: black;">
+                     <div class="col-6 pt-3">
+                          <ul style="list-style-type: none;"><h6>SAYFALAR</h6>
+                            <li><a href="anasayfa.html">ANASAYFA</a></li>
+                            <li><a href="gunluk.html">GÜNLÜK ORGANİK</a></li>
+                            <li><a href="bahce.html">ORGANİK BAHÇE</a></li>
+                            <li><a href="yoresel.html">YÖRESEL ÜRÜNLER</a></li>
+                          </ul>
+                     </div>
+                     <div class="col-6 pt-3">
+                         <h5>İLETİŞİM</h5>
+                         <h5>Tel no:551 120 0380</h5>
+                         <h5>Mail:humeyraaergun@gmail.com</h5>
+                     </div>
+                    <p>@ALL RIGHTS RESERVED</p>
+                </div>
+
+            </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
